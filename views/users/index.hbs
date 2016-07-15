@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<br><a href="/users/novo">Novo cliente</a> <br>
+<table border="1" style="width: 100%; border-collapse: collapse; ">
+    <tr>
+        <th>Código</th>
+        <th>Cliente</th>
+        <th>Idade</th>
+        <th>Ações</th>
+    </tr>
+
+    {{#each users}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{age}}</td>
+        <td><a href="/users/deletar/{{id}}">Deletar</a> </td>
+    </tr>
+    {{/each}}
+
+</table>

@@ -1,0 +1,11 @@
+<h1>Cadastro de Clientes</h1>
+<form action="./salvar" method="post">
+    <input type="text" name="name" placeholder="Nome">
+    <input type="text" name="age" placeholder="Idade">
+    <select>
+        {{#each companies}}
+            <option value="{{id}}">{{name}}</option>
+        {{/each}}
+    </select>
+    <input type="submit" value="cadastrar">
+</form>
